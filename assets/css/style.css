@@ -1,0 +1,30 @@
+#banner {
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+}
+
+#search {
+    background-color:rgb(30, 80, 216);
+    width: 30px;
+    height: 30px;
+    border: rgb(57, 149, 235) 2px;
+}
+
+#input {
+    width: 80%;
+}
+
+#gen-info {
+    border: lightgrey 2px;
+}
+
+.info-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    background: cornflowerblue;
+}

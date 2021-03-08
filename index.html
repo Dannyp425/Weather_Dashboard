@@ -6,36 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://momentjs.com/downloads/moment.js"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather App</title>
 </head>
 
 <body>
     <div id="banner" class="row">
-        <h1 class="col-12 col-md-8 bg-dark text-light text-center">Weather Dashboard</h1>
+        <h1 class="col-12 bg-dark text-light text-center">Weather Dashboard</h1>
     </div>
 
     <div class="container-fluid">
         <div class="row">
             <div id="city-search" class="col-3  ">
                 <div class="row">
-                    <h4 class="col-12">Search for a city: </h4>
-                    <input type="text" placeholder="Atlanta, GA" />
-                    <button id="search" class="flex">mag</button>
+                    <div>
+                        <label for="city">Search for a city: </label><br>
+                        <input id="input" type="text" name="city">
+                        <button id="search" class="flex fas fa-search"></button>
+                    </div>
+                <br><br>
                 </div>
                 <div id="cities" class="row">
-                    <div class="card">
-                        <button>Austin</button>
-                    </div>
+                
                 </div>
             </div>
 
             <div id="gen-info" class="col-9">
-                <h1 id="city-name">ATLANTA (8/15/2020)</h1>
-                <p>Temperature: 90.9 F </p><br>
-                <p>Humidity: 41% </p><br>
-                <p>Wind Speed: 4.7 MPH</p><br>
-                <p>UV Index: </p><span class="bg-danger">9.49</span><br>
+
+                <h1 id="city-name"></h1>
+                <p class="info-text" id="temp"></p><br>
+                <p class="info-text" id="humidity"></p><br>
+                <p class="info-text" id="wind"></p><br>
+                <p class="info-text" id="uv">UV Index: <span class="inline bg-danger">9.4</span></p><br>
             
                 <div id="forecast">
                     <h1>5-Day Forecast:</h1><br>
@@ -60,6 +63,9 @@
             </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9544eb7a0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js" />
     </script>
 </body>
